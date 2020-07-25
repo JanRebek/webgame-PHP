@@ -1,0 +1,19 @@
+    
+    
+    echo time()."<br />";
+
+    echo date('Y-m-d H:i:s')."<br />";
+
+    $datetime = new DateTime();
+
+    echo $datetime->format('Y-m-d H:i:s');
+
+    $date = 26;
+    $month = 7;
+    $year = 1875;
+
+    if(checkdate($month, $date, $year)) {
+        echo "<br /> Correct date!";
+    } else {
+        echo "<br /> Incorrect date!";
+    }
